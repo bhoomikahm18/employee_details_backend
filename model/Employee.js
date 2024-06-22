@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+// Creating the Database
 const employeeSchema = new Schema({
     EmployeeId: {
         type: Number,
