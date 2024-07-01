@@ -7,7 +7,7 @@ module.exports.getAllEmployee = async (req, res) => {
     } catch (err) {
         console.log(err);
     }
-    if (!employees) { //Checking database, is has employee data or not
+    if (!employees) { //Checking database, it has employee data or not
         return res.status(404).json({ message: "Employee Not Found" });
     }
     return res.status(200).json({ employees });
